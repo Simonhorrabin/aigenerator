@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
 </head>
 <body>
     <section class="image-generator">
@@ -12,16 +14,38 @@
             <h1>AI generator</h1>
             <p>Just enter your description and AI will give you an image</p>
             <form action="#" class="generate-form">
-                <input type="text" class="prompt-input" placeholder="Enter your description here">
+                <input type="text" class="prompt-input" placeholder="Enter your description here" required>
                 <div class="controls">
                     <select class="img-quantity">
                         <option value="1">1 Image</option>
                         <option value="2">2 Image</option>
                         <option value="3" selected>3 Image</option>
                     </select>
+                    <button class="generate-btn">Generate</button>
                 </div>
         </div>
     </section>
+    <section class="image-gallery">
+        <div class="img-card">
+            <img src="images/water.png" alt="image">
+            <a href="#" class="download-btn">
+                <i class="ri-save-fill"></i>
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="images/water.png" alt="image">
+            <a href="#" class="download-btn">
+                <i class="ri-save-fill"></i>
+            </a>
+        </div>
+        <div class="img-card">
+            <img src="images/water.png" alt="image">
+            <a href="#" class="download-btn">
+                <i class="ri-save-fill"></i>
+            </a>
+        </div>
+    </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
