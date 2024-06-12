@@ -1,4 +1,5 @@
 const generateForm = document.querySelector(".generate-form");
+const imageGallery = document.querySelector(".image-gallery")
 
 const handleFormSubmission = (e) => {
     e.preventDefault();
@@ -8,7 +9,7 @@ const handleFormSubmission = (e) => {
     const userImgQuantity = e.srcElement[1].value;
 
     const imgCardMarkup = Array.from({length: userImgQuantity}, () =>
-        `  <div class="img-card loading">
+            `<div class="img-card loading">
                  <img src="images/load.png" alt="image">
                 <a href="#" class="download-btn">
                         <i class="ri-save-fill"></i>
@@ -16,7 +17,7 @@ const handleFormSubmission = (e) => {
             </div>`
     ).join("");
 
-    console.log(imgCardMarkup);
+    imageGallery.innerHTML = imgCardMarkup
 }
 
 generateForm.addEventListener("submit", handleFormSubmission)
